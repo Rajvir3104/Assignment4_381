@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import reviews from "../data/reviews.js";
+import reviews from "../data/review.js";
 
 function HomeMainSection(){
     const [random_reviews, set_reviews] = useState([]);
@@ -25,7 +25,7 @@ function HomeMainSection(){
                 <h1>Customer Reviews</h1>
                 {random_reviews.map((review,index) => (
                     <div key={index} className="review">
-                        <p>{review.custmerName}</p>
+                        <p>{review.customerName}</p>
                         <p>{review.reviewContent}</p>
                         <p>Rating: {"★".repeat(review.stars)}</p>
                     </div>
@@ -34,3 +34,5 @@ function HomeMainSection(){
         </main>
     );
 }
+
+export default HomeMainSection;
