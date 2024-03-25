@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import reviews from "../data/review.js";
+import  './HomeComponents.css';
 
 function HomeMainSection(){
     const [random_reviews, set_reviews] = useState([]);
@@ -12,16 +13,16 @@ function HomeMainSection(){
     
     return(
         <main>
-            <section className = "about-us">
+            <section class = "about-us">
                 <h1>About Us</h1>
                 <p>Welcome to our online store! We are passionate about high-quality products and exceptional customer service. Learn more about our story and commitment to your statisfaction.</p>
             </section>
 
-            <section className = "shop-now">
-                <button><a href="/Products">Shop Now</a></button>
+            <section class = "shop-now">
+                <button><a class="shop-now-button" href="/Products">Shop Now</a></button>
             </section>
 
-            <section className = "customer-reviews">
+            <section class = "customer-reviews">
                 <h1>Customer Reviews</h1>
                 {random_reviews.map((review,index) => (
                     <div key={index} className="review">
@@ -31,6 +32,7 @@ function HomeMainSection(){
                     </div>
                 ))}
             </section>
+            <br></br>
         </main>
     );
 }

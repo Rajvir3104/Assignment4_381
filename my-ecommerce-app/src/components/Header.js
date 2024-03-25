@@ -1,11 +1,12 @@
 import React from 'react';
+import  './HomeComponents.css';
 
 function Header(){
     return(
         <div>
-            <header class="header">
-                <img src="/images/logo.png" alt="Company Logo" class="logo" height="100px"></img>
-                <div class="company-name">Company Name</div>
+            <header>
+                <img src="/images/logo.png" alt="Company Logo" height="100px"></img>
+                <div>Company Name</div>
             </header>
 
             <nav>
