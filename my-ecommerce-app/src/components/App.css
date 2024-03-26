@@ -1,0 +1,20 @@
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  width: 300px; /* Adjust width as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.cart {
+  width: 100%;
+}
+
+.cart-items {
+  max-height: calc(100% - 60px); /* Adjust height based on the total height of the cart excluding header and total cost */
+  overflow-y: auto; /* Enable vertical scrolling for cart items */
+}
+
+/* Other styles as needed */

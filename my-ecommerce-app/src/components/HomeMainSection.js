@@ -36,5 +36,4 @@ function HomeMainSection(){
         </main>
     );
 }
-
 export default HomeMainSection;
